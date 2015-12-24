@@ -15,6 +15,8 @@
 		3EA4802C1C2B708B00236B7E /* ScrollImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4802B1C2B708B00236B7E /* ScrollImageViewController.swift */; };
 		3EA4802E1C2B78A200236B7E /* CustomScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4802D1C2B78A200236B7E /* CustomScrollViewController.swift */; };
 		3EA4804E1C2C682600236B7E /* PagedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4804D1C2C682600236B7E /* PagedViewController.swift */; };
+		3EA480501C2C8BC200236B7E /* PeekPagedScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4804F1C2C8BC200236B7E /* PeekPagedScrollViewController.swift */; };
+		3EA480521C2C8F7300236B7E /* ScrollViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA480511C2C8F7300236B7E /* ScrollViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3EA4802B1C2B708B00236B7E /* ScrollImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollImageViewController.swift; sourceTree = "<group>"; };
 		3EA4802D1C2B78A200236B7E /* CustomScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomScrollViewController.swift; sourceTree = "<group>"; };
 		3EA4804D1C2C682600236B7E /* PagedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedViewController.swift; sourceTree = "<group>"; };
+		3EA4804F1C2C8BC200236B7E /* PeekPagedScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeekPagedScrollViewController.swift; sourceTree = "<group>"; };
+		3EA480511C2C8F7300236B7E /* ScrollViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 				3EA4802B1C2B708B00236B7E /* ScrollImageViewController.swift */,
 				3EA4802D1C2B78A200236B7E /* CustomScrollViewController.swift */,
 				3EA4804D1C2C682600236B7E /* PagedViewController.swift */,
+				3EA4804F1C2C8BC200236B7E /* PeekPagedScrollViewController.swift */,
+				3EA480511C2C8F7300236B7E /* ScrollViewContainer.swift */,
 				3EA480161C2B6C8C00236B7E /* ScrollViewTest */,
 				3EA480291C2B6D1300236B7E /* ScrollViewsResources */,
 				3EA480151C2B6C8C00236B7E /* Products */,
@@ -148,7 +154,9 @@
 				3EA4804E1C2C682600236B7E /* PagedViewController.swift in Sources */,
 				3EA480181C2B6C8C00236B7E /* AppDelegate.swift in Sources */,
 				3EA4802C1C2B708B00236B7E /* ScrollImageViewController.swift in Sources */,
+				3EA480501C2C8BC200236B7E /* PeekPagedScrollViewController.swift in Sources */,
 				3EA4802E1C2B78A200236B7E /* CustomScrollViewController.swift in Sources */,
+				3EA480521C2C8F7300236B7E /* ScrollViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +306,7 @@
 				3EA480281C2B6C8C00236B7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
