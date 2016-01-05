@@ -10,6 +10,7 @@ import UIKit
 
 class ScrollViewContainer: UIView {
 
+    @IBOutlet var scrollView: UIScrollView!
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

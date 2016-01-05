@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E67753C1C3B4CA100F9A5EC /* CollectionViewStudy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E67753B1C3B4CA100F9A5EC /* CollectionViewStudy.storyboard */; };
 		3EA480181C2B6C8C00236B7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA480171C2B6C8C00236B7E /* AppDelegate.swift */; };
 		3EA4801D1C2B6C8C00236B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA4801B1C2B6C8C00236B7E /* Main.storyboard */; };
 		3EA4801F1C2B6C8C00236B7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA4801E1C2B6C8C00236B7E /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E67753B1C3B4CA100F9A5EC /* CollectionViewStudy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewStudy.storyboard; sourceTree = "<group>"; };
 		3EA480141C2B6C8C00236B7E /* ScrollViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA480171C2B6C8C00236B7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EA4801C1C2B6C8C00236B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			children = (
 				3EA480171C2B6C8C00236B7E /* AppDelegate.swift */,
 				3EA4801B1C2B6C8C00236B7E /* Main.storyboard */,
+				3E67753B1C3B4CA100F9A5EC /* CollectionViewStudy.storyboard */,
 				3EA4801E1C2B6C8C00236B7E /* Assets.xcassets */,
 				3EA480201C2B6C8C00236B7E /* LaunchScreen.storyboard */,
 				3EA480231C2B6C8C00236B7E /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E67753C1C3B4CA100F9A5EC /* CollectionViewStudy.storyboard in Resources */,
 				3EA4802A1C2B6D1300236B7E /* ScrollViewsResources in Resources */,
 				3EA480221C2B6C8C00236B7E /* LaunchScreen.storyboard in Resources */,
 				3EA4801F1C2B6C8C00236B7E /* Assets.xcassets in Resources */,
