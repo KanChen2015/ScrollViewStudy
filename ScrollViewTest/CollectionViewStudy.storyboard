@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Flickr Photos View Controller-->
@@ -14,22 +15,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XZ3-b0-dMY">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="50" height="90"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlickrCell" id="SOy-mV-yHg">
-                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlickrCell" id="SOy-mV-yHg" customClass="FlickrPhotoCell" customModule="ScrollViewTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="154" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eHz-t5-efz">
+                                            <rect key="frame" x="8" y="8" width="184" height="184"/>
+                                        </imageView>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="d3g-hd-UpV">
+                                            <rect key="frame" x="82" y="81" width="37" height="37"/>
+                                        </activityIndicatorView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="d3g-hd-UpV" firstAttribute="centerX" secondItem="SOy-mV-yHg" secondAttribute="centerX" id="6os-6x-Nx3"/>
+                                    <constraint firstItem="d3g-hd-UpV" firstAttribute="centerY" secondItem="SOy-mV-yHg" secondAttribute="centerY" id="O5D-Br-ose"/>
+                                    <constraint firstItem="eHz-t5-efz" firstAttribute="leading" secondItem="SOy-mV-yHg" secondAttribute="leadingMargin" id="RR3-u1-8im"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="eHz-t5-efz" secondAttribute="bottom" id="mFq-u0-PhQ"/>
+                                    <constraint firstItem="eHz-t5-efz" firstAttribute="top" secondItem="SOy-mV-yHg" secondAttribute="topMargin" id="sYe-MF-hDs"/>
+                                    <constraint firstItem="eHz-t5-efz" firstAttribute="trailing" secondItem="SOy-mV-yHg" secondAttribute="trailingMargin" id="tsv-2j-eIM"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="activityIndicator" destination="d3g-hd-UpV" id="Bmp-1V-uja"/>
+                                    <outlet property="imageView" destination="eHz-t5-efz" id="ODm-Kv-c6J"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlickrPhotoHeaderView" id="jEC-Cx-RU4" customClass="FlickrPhotoHeaderView" customModule="ScrollViewTest" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="64" width="600" height="90"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4M-9g-bsc">
+                                    <rect key="frame" x="261" y="26" width="78" height="39"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="f4M-9g-bsc" firstAttribute="centerX" secondItem="jEC-Cx-RU4" secondAttribute="centerX" id="Byr-gk-xLf"/>
+                                <constraint firstItem="f4M-9g-bsc" firstAttribute="centerY" secondItem="jEC-Cx-RU4" secondAttribute="centerY" id="R0n-Go-rrI"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="f4M-9g-bsc" id="55q-eO-Myo"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="bbn-TK-cHt" id="w5V-T2-SXJ"/>
                             <outlet property="delegate" destination="bbn-TK-cHt" id="mdO-Hq-g68"/>
@@ -46,6 +87,11 @@
                                 <outlet property="delegate" destination="bbn-TK-cHt" id="lV0-uD-Nc2"/>
                             </connections>
                         </textField>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="qmb-WJ-E4H">
+                            <connections>
+                                <action selector="share:" destination="bbn-TK-cHt" id="3sO-qm-L86"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghI-nO-scQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
